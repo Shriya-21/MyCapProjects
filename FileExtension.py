@@ -1,8 +1,6 @@
-myDict={"c":"C","cpp":"C++","py":"Python","java":"Java"}
+myDict = {"c":"C", "cpp":"C++", "py":"Python", "java":"Java", "txt":"Text"}
 
-Name=str(input("Name: "))
-Ext=str(input("Extension: "))
+file = input ("Input the filename: ")
+file_ext = file.split (".")
 
-print("Input the Filename: ",Name,".",Ext)
-print("The extension of the file is: ")
-print(myDict.get(Ext))
+print ("The extension of the file is:", myDict.get (file_ext[1]))
