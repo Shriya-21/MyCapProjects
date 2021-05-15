@@ -1,7 +1,11 @@
 i=0
-myList1=[12,-7,5,64,-14]
-
-while i<len(myList1):
-    if myList1[i]>=0:
-        print(myList1[i])
+myList=[]
+n=int(input("Enter the number of elements: "))
+for i in range(0,n):
+    ele = int(input())
+    myList.append(ele)
+    
+for i in range(0,n):
+    if myList[i]>=0:
+        print(myList[i])
     i=i+1
